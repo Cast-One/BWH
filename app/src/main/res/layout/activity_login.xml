@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/empty"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/layout_Buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="50dp">
+
+                <TextView
+                    android:id="@+id/text_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/become_the_person_you_want_to_be"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/button_start"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/start_doing_it_now"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/button_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="@string/i_already_have_an_account"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginHorizontal="50dp">
+
+                <TextView
+                    android:id="@+id/text_welcome_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/welcome_back"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:hint="@string/email"
+                    android:textColorHint="@color/white"
+                    android:autofillHints="emailAddress"
+                    android:layout_gravity="center"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/background_button"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/white"
+                    android:autofillHints="password"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"/>
+
+                <TextView
+                    android:id="@+id/button_start_login"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/background_button"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/barlow_bold"
+                    android:gravity="center"
+                    android:text="@string/start"
+                    android:textColor="@color/gray_button"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

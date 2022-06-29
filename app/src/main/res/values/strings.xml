@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Breathe With Me</string>
+    <string name="name_app">Breathe With Me</string>
+    <string name="empty"></string>
+    <string name="become_the_person_you_want_to_be">Become the person you want to be</string>
+    <string name="start_doing_it_now">Start doing it now</string>
+    <string name="i_already_have_an_account"> <u> I already have an account </u> </string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="name">Nombre o Alias</string>
+    <string name="age">Edad</string>
+
+
+    <string name="texto">Textoo que queremos</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_music">MUSIC THERAPY: TYPE AND BENEFITS FOR ANXIETY, DEPRESSION AND MORE</string>
+    <string name="music_description">Music therapy involves using a person\'s responses and connections to music to stimulate positive changes in mood and overall well-being. Music therapy can include creating music with instruments of all kinds, singing, moving to music, or simply listening to music.</string>
+    <string name="start">Start</string>
+    <string name="welcome_back">WELCOME BACK!</string>
+    <string name="description">Relaxing anti stress music to control anxiety and eliminate stress. Zen music with Piano to relax or meditate. Beautiful nature landscapes with calming music for relaxation and meditation. Beautiful Relaxing Piano Music for Calm</string>
+    <string name="music_title">TO CONTROL ANSIEXTY AND ELIMINATE STRESS.</string>
+</resources>
