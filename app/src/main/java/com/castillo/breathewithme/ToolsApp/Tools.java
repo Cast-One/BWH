@@ -1,9 +1,13 @@
 package com.castillo.breathewithme.ToolsApp;
 
+import static android.view.View.*;
+
+import android.annotation.SuppressLint;
 import  android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 
 import androidx.fragment.app.Fragment;
@@ -44,6 +48,29 @@ public class Tools {
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
+    public static  void openProgress(FragmentTransaction transaction, Context context) {
+        Activity activity = (Activity) context;
+        ProgressFragment progressFragment = new ProgressFragment();
+        View view = activity.findViewById(R.id.id_progress_fragment);
+        view.setVisibility(VISIBLE);
+        transaction.setCustomAnimations(R.anim.fadein, R.anim.fadein, R.anim.fadeout, R.anim.fadeout);
+        transaction.replace(R.id.id_progress_fragment, progressFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+    public static  void offProgress(Context context) {
+        Activity activity = (Activity) context;
+//        ProgressFragment progressFragment = new ProgressFragment();
+        View view = activity.findViewById(R.id.id_progress_fragment);
+        view.setVisibility(GONE);
+//        transaction.setCustomAnimations(R.anim.fadein, R.anim.fadein, R.anim.fadeout, R.anim.fadeout);
+//        transaction.replace(R.id.id_progress_fragment, progressFragment);
+//        transaction.addToBackStack(null);
+//        transaction.commit();
+    }
+
+
 
 
 }

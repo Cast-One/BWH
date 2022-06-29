@@ -40,4 +40,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    /*Click button*/
+    implementation 'com.github.realpacific:click-shrink-effect:2.0'
+
+    /*State*/
+    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
+
+    /*Progress*/
+    implementation 'com.github.emreesen27:Android-Nested-Progress:v1.0.2'
+
 }

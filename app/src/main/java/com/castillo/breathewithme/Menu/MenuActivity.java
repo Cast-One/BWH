@@ -14,6 +14,7 @@ public class MenuActivity extends AppCompatActivity {
 
     MusicFragment musicFragment;
     HomeFragment homeFragment;
+    AnimateStateFragment animateStateFragment;
 
     //Items menu
     ImageView item_home;
@@ -27,6 +28,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         musicFragment = new MusicFragment();
         homeFragment = new HomeFragment();
+        animateStateFragment = new AnimateStateFragment();
 
         item_home = findViewById(R.id.item_home);
         item_play = findViewById(R.id.item_play);
@@ -53,7 +55,7 @@ public class MenuActivity extends AppCompatActivity {
         item_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Tools.openFragment(R.id.fragment_menu, animateStateFragment, getSupportFragmentManager().beginTransaction());
             }
         });
 
