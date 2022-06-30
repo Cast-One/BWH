@@ -11,6 +11,10 @@
         <entry key="..\:/Users/UrielCastillo/AndroidStudioProjects/BreatheWithMe/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/UrielCastillo/AndroidStudioProjects/BreatheWithMe/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/UrielCastillo/AndroidStudioProjects/BreatheWithMe/app/src/main/res/layout/activity_recover_password.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/UrielCastillo/Desktop/Android/BWH/app/src/main/res/layout/fragment_animate_state.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/UrielCastillo/Desktop/Android/BWH/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/UrielCastillo/Desktop/Android/BWH/app/src/main/res/layout/fragment_item_home.xml" value="0.22" />
+        <entry key="..\:/Users/UrielCastillo/Desktop/Android/BWH/app/src/main/res/layout/fragment_item_home_list.xml" value="0.22" />
         <entry key="..\:/Users/UrielCastillo/Desktop/Android/Breathe_With_Me-master/app/src/main/res/layout/activity_login.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/UrielCastillo/Desktop/Android/Breathe_With_Me-master/app/src/main/res/layout/activity_menu.xml" value="0.17692307692307693" />
         <entry key="..\:/Users/UrielCastillo/Desktop/Android/Breathe_With_Me-master/app/src/main/res/layout/activity_register.xml" value="0.17692307692307693" />
@@ -37,13 +41,6 @@
         <entry key="..\:/Users/andre/OneDrive/Escritorio/Breathe_With_Me-master/Breathe_With_Me-master/Breathe_With_Me-master/app/src/main/res/layout/fragment_music.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/andre/OneDrive/Escritorio/Breathe_With_Me-master/Breathe_With_Me-master/Breathe_With_Me-master/app/src/main/res/layout/fragment_reproduccion.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/andre/OneDrive/Escritorio/Breathe_With_Me-master/Breathe_With_Me-master/Breathe_With_Me-master/app/src/main/res/layout/fragment_reproduccion_list.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/drawable/background_new.xml" value="0.108" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/layout/activity_login.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/layout/activity_reproductor.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/layout/fragment_animate_state.xml" value="0.18" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/layout/fragment_music.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/layout/fragment_progress.xml" value="0.1" />
-        <entry key="..\:/Users/andre/OneDrive/Escritorio/Curso_kotlin/BWH/app/src/main/res/layout/progress_fragment.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

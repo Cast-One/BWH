@@ -15,27 +15,29 @@ import android.view.ViewGroup;
 import com.castillo.breathewithme.R;
 import com.castillo.breathewithme.Menu.Home.placeholder.PlaceholderContent;
 
+import java.util.ArrayList;
+
 /**
  * A fragment representing a list of Items.
  */
-public class HomeAuxFragment extends Fragment {
+public class ItemHomeFragment extends Fragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
-    private int mColumnCount = 2;
+    private int mColumnCount = 1;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public HomeAuxFragment() {
+    public ItemHomeFragment() {
     }
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
-    public static HomeAuxFragment newInstance(int columnCount) {
-        HomeAuxFragment fragment = new HomeAuxFragment();
+    public static ItemHomeFragment newInstance(int columnCount) {
+        ItemHomeFragment fragment = new ItemHomeFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);
@@ -54,7 +56,7 @@ public class HomeAuxFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home_aux_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_item_home_list, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {
@@ -65,7 +67,7 @@ public class HomeAuxFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new HomeRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            recyclerView.setAdapter(new ItemHomeRecyclerViewAdapter(new ArrayList<>()));
         }
         return view;
     }

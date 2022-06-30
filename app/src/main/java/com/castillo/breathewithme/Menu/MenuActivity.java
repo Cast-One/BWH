@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.castillo.breathewithme.Menu.Home.HomeFragment;
 import com.castillo.breathewithme.Menu.Music.MusicFragment;
 import com.castillo.breathewithme.R;
 import com.castillo.breathewithme.ToolsApp.Tools;
@@ -13,7 +14,6 @@ import com.castillo.breathewithme.ToolsApp.Tools;
 public class MenuActivity extends AppCompatActivity {
 
     MusicFragment musicFragment;
-    HomeFragment homeFragment;
     AnimateStateFragment animateStateFragment;
 
     //Items menu
@@ -27,7 +27,6 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         musicFragment = new MusicFragment();
-        homeFragment = new HomeFragment();
         animateStateFragment = new AnimateStateFragment();
 
         item_home = findViewById(R.id.item_home);
@@ -42,7 +41,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Inflar home
-                Tools.openFragment(R.id.fragment_menu,homeFragment,getSupportFragmentManager().beginTransaction());
+                Tools.openFragment(R.id.fragment_menu, new HomeFragment(), getSupportFragmentManager().beginTransaction());
             }
         });
 

@@ -3,13 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list"
-    android:name="com.castillo.breathewithme.Menu.Home.HomeAuxFragment"
+    android:name="com.castillo.breathewithme.Menu.Home.ItemHomeFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-    tools:itemCount="10"
-
-    tools:context=".Menu.Home.HomeAuxFragment"
-    tools:listitem="@layout/fragment_home_aux" />
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".Menu.Home.ItemHomeFragment"
+    tools:listitem="@layout/fragment_item_home" />
