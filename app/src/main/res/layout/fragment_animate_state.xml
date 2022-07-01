@@ -14,213 +14,140 @@
         android:contentDescription="@string/empty"
         />
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/people_you_trust"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/barlow_bold"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/white"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/name_adds_the_contacts_of_the_people_who_can_help_you_in_difficult_moments_your_relatives_your_friends_your_therapist_or_whoever_you_want"
-            android:textColor="@color/white"
-            android:textSize="11sp"
-            android:fontFamily="@font/barlow_regular"
-            android:layout_marginTop="10dp"
-            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:weightSum="1"
-            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="20dp"
             >
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="0.8"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tamara Quiroz"
-                    android:textSize="15sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/barlow_bold"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+52 123456789"
-                    android:textSize="15sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/barlow_regular"
-                    />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_play"
-                android:contentDescription="@string/empty"
-                android:layout_weight="0.2"
-                android:foregroundGravity="right"
+                android:text="@string/people_you_trust"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/barlow_bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
                 />
 
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/white"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:weightSum="1"
-            android:layout_margin="10dp"
-            >
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="0.8"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tamara Quiroz"
-                    android:textSize="15sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/barlow_bold"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+52 123456789"
-                    android:textSize="15sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/barlow_regular"
-                    />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_play"
-                android:contentDescription="@string/empty"
-                android:layout_weight="0.2"
-                android:foregroundGravity="right"
+                android:text="@string/name_adds_the_contacts_of_the_people_who_can_help_you_in_difficult_moments_your_relatives_your_friends_your_therapist_or_whoever_you_want"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:fontFamily="@font/barlow_regular"
+                android:layout_marginTop="10dp"
                 />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:name="com.castillo.breathewithme.Menu.ContactosFragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".Contactos.ContactosFragment"
+                tools:listitem="@layout/fragment_contactos" />
+
+
+            <TextView
+                android:id="@+id/button_addContact"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_button"
+                android:backgroundTint="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/add_more_contacts"
+                android:textSize="15sp"
+                android:textColor="@color/gray_button"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_button"
+                android:backgroundTint="@color/red"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/i_need_help_now"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/howareyot"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/barlow_bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.hsalf.smileyrating.SmileyRating
+                android:id="@+id/smile_rating"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <SeekBar
+                android:layout_marginTop="20dp"
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/text_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/barlow_bold"
+                />
+
+
+
         </LinearLayout>
 
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:background="@drawable/background_button"
-            android:backgroundTint="@color/white"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/add_more_contacts"
-            android:textSize="15sp"
-            android:textColor="@color/gray_button"
-            android:padding="10dp"
-            android:layout_margin="10dp"
-            />
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:background="@drawable/background_button"
-            android:backgroundTint="@color/red"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/i_need_help_now"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:padding="10dp"
-            android:layout_margin="10dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/howareyot"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/barlow_bold"
-            />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/white"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            />
-
-        <com.hsalf.smileyrating.SmileyRating
-            android:id="@+id/smile_rating"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-        <SeekBar
-            android:layout_marginTop="20dp"
-            android:id="@+id/seekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="15dp"
-            />
-
-        <TextView
-            android:id="@+id/text_state"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:fontFamily="@font/barlow_bold"
-            />
-
-
-
-    </LinearLayout>
-
-
+    </androidx.core.widget.NestedScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
